@@ -60,8 +60,17 @@ function draw() {
     if(fruitGroup.isTouching(knife)){
       fruitGroup.destroyEach();
       
-      knifeSwooshSound.play();
-      score=score+2;
+      // knifeSwooshSound.play();
+      // knifeSwooshSound.play;
+      // knifeSwooshSound();
+      // knifeSwooshSoundplay();
+
+
+      // score=score;
+      // score=+2;
+      // score=2;
+      // score=score+2;
+      
     }
     else
     {
@@ -88,7 +97,7 @@ function draw() {
   drawSprites();
   //exibir pontuação
   textSize(25);
-  text("Pontuação : "+ score,250,50);
+  text("Pontuação: "+ score,250,50);
 }
 
 
