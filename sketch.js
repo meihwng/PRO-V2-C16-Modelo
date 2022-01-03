@@ -106,26 +106,15 @@ function Monster(){
 
 function fruits(){
   if(World.frameCount%80===0){
-    position = Math.round(random(1,2));
     fruit=createSprite(400,200,20,20);
-    console.log(position)
-     //usando uma variável aleatória muda a posição da fruta, para torná-la mais desafiadora
-    
-    if(position==1)
-    {
-    fruit.x=600;
-    fruit.velocityX=-(7+(score/4));
-    }
-    else
-    {
-      if(position==2){
-      fruit.x=0;
-      
-  //Aumente a velocidade da fruta após a pontuação 4 ou 10
-      fruit.velocityX= (7+(score/4));
-      }
-    }
-    
+    fruit.x = 0    
+  //aumentar a velocidade das frutas após a pontuação 4 
+
+      // fruit.velocityX= (7+(score/4));
+      // fruit.velocityY= (7+(score));
+      // fruit.velocity= (7+(score/4));
+      // fruit.velocityX= (7);
+     
     fruit.scale=0.2;
      //fruit.debug=true;
      r=Math.round(random(1,4));
